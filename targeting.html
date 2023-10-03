@@ -6,8 +6,35 @@
 
     <!-- Inline styles go between style tags -->
     <style>
+    h1{
+        color:rebeccapurple;
+    }
+    /* Child selector */
+    form > p{
+        color:forestgreen;
+    }
+    /* Selectors can be combined via direct sibling */
+    label + input{
+        clear:both;
+        display:block;
+    }
 
+    /* General siblings */
+    label ~ input{
+        clear:both;
+        display:block;
+    }
 
+    label{
+        font-weight:900;
+    }
+    button{
+        background-color:darkturquoise;
+        color:lemonchiffon;
+        font-family:"Comic Sans MS",serif;
+        font-size:16px;
+
+    }
     </style>
 
 

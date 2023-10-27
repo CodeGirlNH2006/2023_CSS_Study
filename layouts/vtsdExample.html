@@ -65,12 +65,54 @@
             vertical-align:middle;
             padding-top:40px;
         }
+        ul{
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            overflow:hidden;
+            background-color:coral;
+        }
+        li{
+            float:left;
+        }
+        li a {
+            display: block;
+            color: darkcyan;
+            font-family: "Bookman Old Style";
+            text-align:center;
+            text-decoration: none;
+            padding: 14px 16px;
+            border-right:1px solid white;
+        }
+        li a:hover{
+            background:lightcoral;
+        }
+        /*Opt active class*/
+        .active{
+            background-color: tomato;
+        }
+        .advertise{
+            float: right !important;
+            background-color:gold;
+            border-right:0px;
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <div class="navbar">Navigation goes here</div>
+        <div class="navbar">
+            <ul>
+                <!--- active class for current page -->
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Who We Are</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Mailing List</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li class="advertise"><a href="#">Give me money</a></li>
+
+            </ul>
+        </div>
         <div class="header">Header goes here</div>
         <div class="sliderPic">Slider pictures go here</div>
         <div class="sliderNav">Slider navigation goes here</div>
